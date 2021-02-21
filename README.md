@@ -2,8 +2,6 @@
 
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
-
 ## User Story
 
 ```
@@ -32,17 +30,11 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-The following image demonstrates the application functionality:
+Here's a screenshot of my deployed app. Once you hit generate password that will prompt the critera
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+![screenshot:](https://user-images.githubusercontent.com/77821135/108631905-247f5700-7421-11eb-9b23-dbb2035c3ecd.jpg)
 
-## Review
+Github link: https://github.com/Shygois/PW-Generator
 
-You are required to submit the following for review:
+Deployed link: https://shygois.github.io/PW-Generator/
 
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
