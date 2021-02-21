@@ -30,7 +30,7 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-Here's a screenshot of my deployed app. Once you hit generate password that will prompt the critera
+Here's a screenshot of my deployed app. Once you hit generate password that will prompt the criteria
 
 ![screenshot:](https://user-images.githubusercontent.com/77821135/108631905-247f5700-7421-11eb-9b23-dbb2035c3ecd.jpg)
 
