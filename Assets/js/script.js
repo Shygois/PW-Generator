@@ -1,23 +1,23 @@
 var lowerCaseChar = 'abcdefghijklmnopqrstuvwxyz';
-var upperCaseChar = 'lowerCase.toUpperCase()';
+var upperCaseChar = 'lowerCaseChar.toUpperCaseChar()';
 var numericChar = '123456789';
 var specialCharacter = '!@#$%^&*~()+_\[]<>?/';
-var lengthPrompt;
+var passwordLength;
 
 var charSet;
 
 
-var passwordLength = function() {
+var lengthPrompt = function() {
   // prompt for password length (8-128)
-  lengthPrompt = prompt(
+  passwordLength = prompt(
     "How many characters would you like your password to contain? It must be between 8 - 128 characters."
     );
     // validate character count
-    if (lengthPrompt < 8 || lengthPrompt > 128) {
+    if (passwordLength < 8 || passwordLength > 128) {
       alert("Password should be between 8 and 128 characters");
       generatePassword();
     }
-    if (lengthPrompt === "" || lengthPrompt === null || isNaN(lengthPrompt)) {
+    if (passwordLength === "" || passwordLength === null || isNaN(passwordLength)) {
       alert("Your entry is invalid");
       generatePassword();
     }
@@ -66,17 +66,14 @@ var getRandomIndex = function(stringLength) {
 
 var generatePassword = function() {
   var charIndex;
-  passwordLength();
+  lengthPrompt();
   charTypePrompt();
-  var newPassword = getRandomIndex(charSet.length);
+  var newPassword = ' ';
 
   // Using password length and character prompt we're going to retrieve a character set at random location
-  for (var i = 0; i < lengthPrompt; i++) {
+  for (var i = 0; i < passwordLength; i++) {
     charIndex = getRandomIndex(charSet.length);
-    console.log("Charset length: " + charSet.length);
-    console.log("CharIndex: " + charIndex);
     newPassword += charSet.charAt(charIndex); 
-    console.log(newPassword);
   }
   
   return newPassword;
